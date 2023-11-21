@@ -14,7 +14,6 @@ search.addEventListener('click', () => {
         return;
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
-    //fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
         .then(json => {
             console.log(json)
@@ -105,63 +104,7 @@ search.addEventListener('click', () => {
 });
 
 
-
-
-// fetch('https://api.chucknorris.io/jokes/random')
-//       .then(res => res.json()) // parse response as JSON
-//       .then(data => {
-//         console.log(data)
-//         document.querySelector('.joke').innerText = data.value; 
-//       })
-//       .catch(err => {
-//           console.log(`error ${err}`)
-//       });
-
-
-
-
-
-
-
-    // fetch(`https://newsdata.io/api/1/news?apikey=pub_33243884407b24432fcbac1814b85d50d5545&category=business,domestic,education,entertainment,environment&language=en`)
-    // .then(res => res.json())
-    // .then(data => {
-    //   console.log(data);
-    //   let i = 0; // Initialize index
-      
-    //   // Function to update news information
-    //   function updateNews() {
-    //     // Check if index is within the array bounds
-    //     if (i < data.results.length) {
-    //       document.querySelector('.news').innerText = data.results[i].content;
-    //       document.querySelector('.news_img').src = data.results[i].image_url;
-    //       i++; // Increment index
-    //     } else {
-    //       i = 0; // Reset index to start from the beginning
-    //     }
-    //   }
-      
-    //   // Initial update
-    //   updateNews();
-      
-    //   // Set interval to update news every 5 seconds
-    //   const newsInterval = setInterval(updateNews, 5000);
-    // })
-    // .catch(err => {
-    //   console.log(`error ${err}`);
-    // });
-
-
-
-
-
-
-
-
-
-
     fetch(`https://newsdata.io/api/1/news?apikey=pub_33243884407b24432fcbac1814b85d50d5545&language=en `)
-    //fetch(`https://newsdata.io/api/1/news?apikey=pub_33243884407b24432fcbac1814b85d50d5545&category=business,domestic,education,entertainment,environment`)
 
     .then(res => res.json())
     .then(data => {
