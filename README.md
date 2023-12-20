@@ -4,6 +4,9 @@
 
 Welcome to the Weather App! This application allows you to get current weather information for a specified location.
 
+Live Demo
+You can visit the live version of the website at https://darling-cactus-3e78b0.netlify.app/
+
 ## Features
 
 - Display current weather conditions including temperature, humidity, wind speed, and description.
